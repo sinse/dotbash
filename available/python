@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+# we want python3 by default
+alias python='python3'
+alias pip='pip3'
+
+
+# Python startup script
+export PYTHONSTARTUP=~/bin/pystartup.py
+
+
+# Virtualenv
+export WORKON_HOME=~/.venvs
+source /usr/share/virtualenvwrapper/virtualenvwrapper.sh
+
