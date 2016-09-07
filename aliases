@@ -17,8 +17,3 @@ alias ncal='ncal -w -B 1 -A 2'
 alias now='date +%s%3N'
 alias ungz-stream="python -c \"import gzip,sys,StringIO;print(gzip.GzipFile(fileobj=StringIO.StringIO(sys.stdin.read())).read())\""
 
-alias htpc='ssh htpc'
-alias jpm-run='jpm run -b /usr/bin/firefox'
-
-alias mount-htpc='sudo mount -t cifs //192.168.1.10/Data ~/htpc -o rw,nosetuids,sec=ntlmv2,username=sinse'
-
