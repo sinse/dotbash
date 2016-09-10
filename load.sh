@@ -3,7 +3,7 @@ BASH_DIR=~/.bash.d
 ENABLED_SCRIPTS=$BASH_DIR/enabled
 AVAILABLE_SCRIPTS=$BASH_DIR/available
 
-# enabme script
+# enable script
 function bash-enable() {
     if [ -f $AVAILABLE_SCRIPTS/$1 ] ;
     then
@@ -11,7 +11,7 @@ function bash-enable() {
     fi
 }
 
-# disabled script
+# disable script
 function bash-disable() {
     if [ -f $ENABLED_SCRIPTS/$1 ] ;
     then
@@ -22,4 +22,7 @@ function bash-disable() {
 # load environment
 source $BASH_DIR/aliases
 source /dev/stdin < <(find $ENABLED_SCRIPTS -xtype f ! -iname ".gitignore" -exec cat {} \;)
+
+# extend PATH
+export PATH=$PATH:~/.bash.d/bin
 
