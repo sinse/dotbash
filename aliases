@@ -13,7 +13,7 @@ alias update='sudo apt-get update'
 alias upgrade='sudo apt-get upgrade'
 alias addppa='sudo add-apt-repository'
 
-alias ncal='ncal -w -B 1 -A 2'
+alias ncal='ncal -w -B 1 -A 6'
 alias now='date +%s%3N'
 alias ungz-stream="python -c \"import gzip,sys,StringIO;print(gzip.GzipFile(fileobj=StringIO.StringIO(sys.stdin.read())).read())\""
 
