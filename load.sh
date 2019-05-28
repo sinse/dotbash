@@ -1,5 +1,5 @@
 #!/bin/env bash
-BASH_DIR=~/.bash.d
+BASH_DIR=~/.config/bash
 ENABLED_SCRIPTS=$BASH_DIR/enabled
 AVAILABLE_SCRIPTS=$BASH_DIR/available
 
@@ -24,5 +24,5 @@ source $BASH_DIR/aliases
 source /dev/stdin < <(find $ENABLED_SCRIPTS -xtype f ! -iname ".gitignore" -exec cat {} \;)
 
 # extend PATH
-export PATH=$PATH:~/.bash.d/bin
+export PATH=$PATH:$BASH_DIR/bin
 
